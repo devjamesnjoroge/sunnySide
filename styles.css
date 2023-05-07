@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+:root{
+    /* Primary */
+
+    --Soft_red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark_desaturated_cyan: hsl(167, 40%, 24%);
+    --Dark_blue: hsl(198, 62%, 26%);
+    --Dark_moderate_cyan: hsl(168, 34%, 41%);
+
+    /* Neutral */
+
+    --Very_dark_desaturated_blue: hsl(212, 27%, 19%);
+    --Very_dark_grayish_blue: hsl(213, 9%, 39%);
+    --Dark_grayish_blue: hsl(232, 10%, 55%);
+    --Grayish_blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Font Family */
+
+    --Fraunces: 'Fraunces', serif;
+    --Barlow: 'Barlow', sans-serif;
+
+    /* Breakpoints */
+
+    --Mobile_breakpoint: 375px;
+    --Desktop_breakpoint: 1440px;
+
+}
+
+header{
+    background-image: url('/images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10em;
+}
+
+nav{
+    padding: 2rem 1.5rem;
+    color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    font-family: var(--Barlow);
+    font-size: 1.5rem;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--White);
+    font-family: var(--Barlow);
+    font-size: .8rem;
+}
+
+nav ul li:nth-child(4){
+    background-color: var(--White);
+    padding: .3em 1em;
+    border-radius: 1em;
+}
+
+nav ul li:nth-child(4) a{
+    color: var(--Very_dark_desaturated_blue);
+    text-transform: uppercase;
+    font-family: var(--Fraunces);
+    font-weight: 900;
+}
+
+header h1{
+    margin-top: 2em;
+    font-family: var(--Fraunces);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--White);
+    font-weight: 900;
+}
+
+header img{
+    margin-top: 3em;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
